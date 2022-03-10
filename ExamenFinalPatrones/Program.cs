@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using ExamenFinalPatrones;
+
+var navegador = new Navegador();
+navegador.TipoDeRuta = "A"; //Dato que vendria de la aplicacion cliente, solo por temas practicos
+
+var trazadoRuta = navegador.generar_ruta(new object(), new object());
+
